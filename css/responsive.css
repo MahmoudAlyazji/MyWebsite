@@ -1,0 +1,83 @@
+/* Responsive overrides for MyWebsite */
+/* Basic layout: reserve sidebar width on large screens */
+.sidebar-navigation {
+  width: 250px;
+}
+.page-content {
+  margin-left: 250px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Make images fluid by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Projects grid: fluid columns */
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.project-link img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Slider info centered on small screens */
+.Modern-Slider .info {
+  right: 60px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 991px) {
+  /* Hide fixed sidebar and use top nav */
+  .sidebar-navigation {
+    display: none !important;
+  }
+  .page-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 20px;
+  }
+  /* make the responsive header visible */
+  header.responsive-nav {
+    display: block;
+  }
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+  }
+  .section-heading h1 { font-size: 28px; }
+  .Modern-Slider .info {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-link img { height: 180px; }
+  .section-heading h1 { font-size: 24px; }
+  .content-section { padding-top: 40px; }
+  .white-button a, .accent-button a { height: 40px; line-height: 40px; padding: 0 18px; }
+}
+
+/* Ensure forms and contact inputs are full width on small screens */
+#contact input, #contact textarea, #contact button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Small tweak: make sidebar nav links comfortably tappable */
+.sidebar-navigation nav a { padding: 10px 0; display: inline-block; }

@@ -21,9 +21,9 @@ p {
 }
 
 .page-content {
-  width: 82%; /* Increased from 77.5% to fill the extra space */
+  width: 82%;
   float: none;
-  margin-left: 18%; /* Decreased from 22.5% to align perfectly with your 18% sidebar */
+  margin-left: 18%;
   transition: all 0.3s ease;
 }
 
@@ -444,8 +444,8 @@ header {
 }
 
 .Modern-Slider .item-1 .image { background-image: url(../img/portfolio/IMG_2485.JPG); }
-.Modern-Slider .item-2 .image { background-image: url(../img/portfolio/IMG_2493.webp); }
-.Modern-Slider .item-3 .image { background-image: url(../img/img44.jpeg); }
+.Modern-Slider .item-2 .image { background-image: url(../img/portfolio/IMG_2493.JPG); }
+.Modern-Slider .item-3 .image { background-image: url(../img/portfolio/LAB.jpg); }
 
 .Modern-Slider .PrevArrow:before{content:'\f104';}
 
@@ -478,13 +478,12 @@ header {
 #about {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 5px;
+  padding-bottom: 80px;
   border-bottom: 1px solid #eee;
 }
 
 #about .section-heading {
   margin-right: 20%;
-  text-align: justify;
 }
 
 #about .content-section {
@@ -594,15 +593,11 @@ header {
   margin-bottom: 12.5px;
 }
 
-#about .item .text-content p{
-    text-align: justify;
-}
-
 /* Projects Style */
 #projects {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
 }
 #projects .masonry {
   position: relative;
@@ -702,21 +697,21 @@ header {
 #education {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 0px; /* Reduced from 80px for a more compact bottom spacing */
+  padding-bottom: 80px;
 }
 #education img{
-  width: 150px; /* Reduced from 250px */
-  height: 150px; /* Reduced from 250px */
+  width: 250px;
+  height: 250px;
   max-width: 100%;
 }
 #education .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  height: auto; 
+  height: auto; /* Changed for responsive */
   width: 100%;
   background-color: #eee;
-  border-bottom: 6px solid #45489a; /* Reduced thickness from 10px */
+  border-bottom: 10px solid #45489a;
   display: flex;
   flex-wrap: wrap;
 }
@@ -734,8 +729,8 @@ header {
   text-transform: capitalize;
   letter-spacing: 0.5px;
   color: #232323;
-  font-size: 16px; /* Slightly reduced from 19px to match the smaller layout */
-  line-height: 55px; /* Reduced from 80px to make the tabs shorter */
+  font-size: 19px;
+  line-height: 80px;
   font-weight: 600;
   transition: 0.5s;
 }
@@ -777,11 +772,11 @@ header {
   display: flex;
   align-items: flex-start;
   gap: 30px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* Added to allow stacking on mobile */
 }
 #education .tabgroup ul li img {
-  width: 150px; /* Reduced from 250px to make the logo/image smaller */
-  height: 150px; /* Reduced from 250px */
+  width: 250px;
+  height: 250px;
   object-fit: contain;
   flex-shrink: 0;
   margin-right: 0;
@@ -789,36 +784,37 @@ header {
 #education .tabgroup ul li .text-content {
   flex: 1;
   display: block;
-  min-width: 250px; 
+  min-width: 250px; /* Ensures text block doesn't get too squished */
 }
 
 #education .item .text-content h4 {
-  padding-top: 0px; /* Reset padding since the image is shorter now */
+  padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
-  font-size: 19px; /* Slightly reduced from 21px */
+  font-size: 21px;
   font-weight: 600;
   color: #232323;
   letter-spacing: 0.5px;
 }
 #education .item .text-content span {
   display: inline-block;
-  font-size: 14px; /* Slightly reduced from 15px */
+  font-size: 15px;
   font-weight: 600;
   color: #7a7a7a;
   letter-spacing: 0.5px;
-  margin-bottom: 10px; /* Reduced from 15px */
+  margin-bottom: 15px;
 }
-#education .item .text-content .accent-button { margin-top: 15px; /* Reduced from 25px */ }
+#education .item .text-content .accent-button { margin-top: 25px; }
+
 /* resume Style */
 #resume {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 80px;
 }
 #resume img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   max-width: 100%;
 }
 #resume .tabs {
@@ -886,10 +882,6 @@ header {
   display: block; /* changed from inline for better responsive flow */
 }
 
-#resume .text-content{
-    text-align: justify;
-}
-
 #resume .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
@@ -906,9 +898,6 @@ header {
   color: #7a7a7a;
   letter-spacing: 0.5px;
   margin-bottom: 15px;
-}
-#resume .item .text-content p {
-  text-align: justify;
 }
 #resume .item .text-content .accent-button { margin-top: 25px; }
 
@@ -940,14 +929,14 @@ header {
 #languages {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 80px;
 }
 
 /* Technical Skills Section Styles */
 #skills {
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 80px;
 }
 
 #skills .skills-category {
